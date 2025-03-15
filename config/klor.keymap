@@ -154,8 +154,8 @@
 
             bindings = <
          &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK        &bt BT_CLR
-&kp F16  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &bt BT_NXT  &bootloader
-&kp F17  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &bt BT_PRV  &trans
+&kp F16  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &mkp LCLK   &bootloader
+&kp F17  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &bt BT_PRV  &bt BT_NXT
                            &trans   &trans   &trans   &trans  &trans  &trans          &trans          &trans
             >;
 
