@@ -178,7 +178,7 @@
         };
 
         mouse_f {
-            label = "ADJUST";
+            label = "mouse_F";
             bindings = <
              &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &bt BT_CLR
 &bootloader  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &rgb_ug RGB_EFF  &msc SCRL_LEFT     &msc SCRL_UP    &msc SCRL_RIGHT  &bt BT_NXT  &bootloader
