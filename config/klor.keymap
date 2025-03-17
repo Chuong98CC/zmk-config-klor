@@ -69,10 +69,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-             &kp Q  &kp W  &kp E      &kp R                 &kp T                                                       &kp Y                    &kp U        &kp I        &kp O    &kp P
-&kp ESCAPE   &kp A  &kp S  &kp D      &kp F                 &kp G                                                       &kp H                    &kp J        &kp K        &kp L    &hm RIGHT_CONTROL SEMICOLON  &kp APOS
-&lt 4 GRAVE  &kp Z  &kp X  &kp C      &kp V                 &kp B               &trans            &trans                &kp N                    &kp M        &kp COMMA    &kp DOT  &hm RA(RC(RIGHT_GUI)) SLASH  &hm RIGHT_SHIFT ENTER
-                           &kp LCTRL  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT SPACE  &mt LEFT_GUI TAB  &mt RIGHT_GUI DELETE  &mt RIGHT_ALT BACKSPACE  &lt 5 SPACE  &lt 6 SPACE
+             &kp Q  &kp W  &kp E      &kp R                 &kp T                                                               &kp Y                        &kp U        &kp I        &kp O    &kp P
+&kp TAB      &kp A  &kp S  &kp D      &kp F                 &kp G                                                               &kp H                        &kp J        &kp K        &kp L    &hm RIGHT_CONTROL SEMICOLON  &kp APOS
+&lt 4 GRAVE  &kp Z  &kp X  &kp C      &kp V                 &kp B               &trans            &trans                        &kp N                        &kp M        &kp COMMA    &kp DOT  &hm RA(RC(RIGHT_GUI)) SLASH  &hm RIGHT_SHIFT ENTER
+                           &kp LCTRL  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT SPACE  &mt LEFT_GUI TAB  &mt RC(RA(RIGHT_GUI)) DELETE  &mt RG(RIGHT_ALT) BACKSPACE  &lt 5 SPACE  &lt 6 SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
