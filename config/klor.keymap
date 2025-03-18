@@ -42,6 +42,27 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp RG(LEFT_BRACKET)>;
         };
+
+        td_right_bracceless: td_right_bracceless {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_RIGHT_BRACCELESS";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp RG(RIGHT_BRACKET)>;
+        };
+
+        td_minus: td_minus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MINUS";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp RG(RIGHT_BRACKET)>;
+        };
+
+        td_equal: td_equal {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_EQUAL";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp RG(RIGHT_BRACKET)>;
+        };
     };
 
     combos {
@@ -76,10 +97,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-                      &kp Q  &kp W  &kp E        &kp R                 &kp T                                                                 &kp Y                    &kp U                  &kp I        &kp O    &kp P
-&kp TAB               &kp A  &kp S  &kp D        &hm LEFT_SHIFT F      &kp G                                                                 &kp H                    &kp J                  &kp K        &kp L    &hm RIGHT_CONTROL SEMICOLON  &kp APOS
-&mt LEFT_SHIFT GRAVE  &kp Z  &kp X  &kp C        &kp V                 &kp B               &trans               &trans                       &kp N                    &kp M                  &kp COMMA    &kp DOT  &hm RA(RC(RIGHT_GUI)) SLASH  &hm RIGHT_SHIFT ENTER
-                                    &lt 7 SPACE  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT SPACE  &mt LEFT_GUI DELETE  &mt RIGHT_CONTROL BACKSPACE  &mt RG(RIGHT_ALT) SPACE  &mt RIGHT_SHIFT SPACE  &lt 8 SPACE
+                      &kp Q  &kp W  &kp E        &kp R                 &kp T                                                        &kp Y                        &kp U                  &kp I        &kp O    &kp P
+&kp TAB               &kp A  &kp S  &kp D        &hm LEFT_SHIFT F      &kp G                                                        &kp H                        &hm RSHFT J            &kp K        &kp L    &hm RIGHT_CONTROL SEMICOLON  &kp APOS
+&mt LEFT_SHIFT GRAVE  &kp Z  &kp X  &kp C        &kp V                 &kp B               &trans            &trans                 &kp N                        &kp M                  &kp COMMA    &kp DOT  &hm RA(RC(RIGHT_GUI)) SLASH  &hm RIGHT_SHIFT ENTER
+                                    &lt 7 SPACE  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT SPACE  &mt LEFT_GUI TAB  &mt RIGHT_CONTROL DEL  &mt RG(RIGHT_ALT) BACKSPACE  &mt RIGHT_SHIFT SPACE  &lt 8 SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -199,10 +220,10 @@
         NumSym {
             label = "NumSym";
             bindings = <
-            &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp N5                                        &kp NUMBER_6        &kp N7             &kp N8             &kp N9     &kp N0
-&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                                   &td_left_braceless  &kp RIGHT_BRACKET  &kp MINUS          &kp EQUAL  &kp BACKSLASH  &kp PERIOD
-&kp TILDE   &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans         &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp UNDERSCORE     &kp PLUS   &kp PIPE       &trans
-                                            &trans        &trans                &trans                 &trans  &kp RIGHT_GUI  &kp RIGHT_ALT       &trans             &kp RIGHT_CONTROL
+            &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp N5                                               &kp NUMBER_6             &kp N7                &kp N8             &kp N9     &kp N0
+&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                                          &td_left_braceless       &td_right_bracceless  &td_minus          &td_equal  &kp BACKSLASH  &kp PERIOD
+&kp TILDE   &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans                &kp LEFT_BRACE           &kp RIGHT_BRACE       &kp UNDERSCORE     &kp PLUS   &kp PIPE       &trans
+                                            &trans        &trans                &trans                 &trans  &mt RIGHT_GUI DELETE  &mt RIGHT_ALT BACKSPACE  &trans                &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
