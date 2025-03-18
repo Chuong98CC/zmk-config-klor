@@ -35,6 +35,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        td_left_braceless: td_left_braceless {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LEFT_BRACELESS";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RG(LEFT_BRACKET)>;
+        };
     };
 
     combos {
@@ -69,10 +76,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-             &kp Q  &kp W  &kp E            &kp R                 &kp T                                                            &kp Y                    &kp U        &kp I        &kp O    &kp P
-&kp ESCAPE   &kp A  &kp S  &kp D            &kp F                 &kp G                                                            &kp H                    &kp J        &kp K        &kp L    &hm RIGHT_CONTROL SEMICOLON  &kp APOS
-&lt 4 GRAVE  &kp Z  &kp X  &kp C            &kp V                 &kp B               &trans            &trans                     &kp N                    &kp M        &kp COMMA    &kp DOT  &hm RA(RC(RIGHT_GUI)) SLASH  &hm RIGHT_SHIFT ENTER
-                           &mt LCTRL SPACE  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT SPACE  &mt LEFT_GUI TAB  &mt RC(RA(RIGHT_GUI)) TAB  &mt RG(RIGHT_ALT) SPACE  &lt 5 SPACE  &lt 6 SPACE
+                      &kp Q  &kp W  &kp E        &kp R                 &kp T                                                                 &kp Y                    &kp U                  &kp I        &kp O    &kp P
+&kp TAB               &kp A  &kp S  &kp D        &hm LEFT_SHIFT F      &kp G                                                                 &kp H                    &kp J                  &kp K        &kp L    &hm RIGHT_CONTROL SEMICOLON  &kp APOS
+&mt LEFT_SHIFT GRAVE  &kp Z  &kp X  &kp C        &kp V                 &kp B               &trans               &trans                       &kp N                    &kp M                  &kp COMMA    &kp DOT  &hm RA(RC(RIGHT_GUI)) SLASH  &hm RIGHT_SHIFT ENTER
+                                    &lt 7 SPACE  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT SPACE  &mt LEFT_GUI DELETE  &mt RIGHT_CONTROL BACKSPACE  &mt RG(RIGHT_ALT) SPACE  &mt RIGHT_SHIFT SPACE  &lt 8 SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -168,10 +175,10 @@
         symbols {
             label = "symbols";
             bindings = <
-            &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5                             &kp NUMBER_6   &kp N7      &kp N8         &kp N9            &kp N0
-&kp ESCAPE  &kp BACKSLASH  &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET                  &kp LEFT       &kp DOWN    &kp UP_ARROW   &kp RIGHT         &kp COLON     &kp DOUBLE_QUOTES
-&kp TILDE   &kp PIPE       &kp UNDER     &kp PLUS      &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans  &kp BACKSPACE  &kp DELETE  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp RS(ENTER)
-                                         &trans        &trans            &trans             &trans  &trans  &trans         &trans      &trans
+            &kp F1         &trans     &trans     &trans                &trans                                 &trans         &trans      &trans         &trans            &trans
+&kp ESCAPE  &kp BACKSLASH  &kp MINUS  &kp EQUAL  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                  &kp LEFT       &kp DOWN    &kp UP_ARROW   &kp RIGHT         &kp COLON     &kp DOUBLE_QUOTES
+&kp TILDE   &kp PIPE       &kp UNDER  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &kp BACKSPACE  &kp DELETE  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp RS(ENTER)
+                                      &trans     &trans                &trans                 &trans  &trans  &trans         &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -183,6 +190,30 @@
              &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &bt BT_CLR
 &bootloader  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &rgb_ug RGB_EFF  &msc SCRL_LEFT     &msc SCRL_UP    &msc SCRL_RIGHT  &bt BT_NXT  &bootloader
 &kp F16      &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &rgb_ug RGB_EFR  &mkp MB4           &msc SCRL_DOWN  &mkp MB5         &bt BT_PRV  &ext_power EP_TOG
+                               &trans   &trans   &trans   &trans  &trans  &trans           &trans             &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        NumSym {
+            label = "NumSym";
+            bindings = <
+            &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp N5                                 &kp NUMBER_6        &kp N7             &kp N8          &kp N9     &kp N0
+&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                            &td_left_braceless  &kp RIGHT_BRACKET  &kp MINUS       &kp EQUAL  &kp BACKSLASH  &trans
+&kp TILDE   &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp UNDERSCORE  &kp PLUS   &kp PIPE       &trans
+                                            &trans        &trans                &trans                 &trans  &trans  &trans              &trans             &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        func {
+            label = "func";
+            bindings = <
+             &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &kp K_MUTE    &kp C_VOLUME_UP  &bt BT_CLR
+&bootloader  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &kp PAGE_UP      &kp LEFT           &kp UP_ARROW  &kp RIGHT        &msc SCRL_UP    &bootloader
+&kp F16      &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &kp PAGE_DOWN    &msc SCRL_LEFT     &kp DOWN      &msc SCRL_RIGHT  &msc SCRL_DOWN  &ext_power EP_TOG
                                &trans   &trans   &trans   &trans  &trans  &trans           &trans             &trans
             >;
 
