@@ -199,10 +199,10 @@
         NumSym {
             label = "NumSym";
             bindings = <
-            &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp N5                                 &kp NUMBER_6        &kp N7             &kp N8          &kp N9     &kp N0
-&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                            &td_left_braceless  &kp RIGHT_BRACKET  &kp MINUS       &kp EQUAL  &kp BACKSLASH  &trans
-&kp TILDE   &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp UNDERSCORE  &kp PLUS   &kp PIPE       &trans
-                                            &trans        &trans                &trans                 &trans  &trans  &trans              &trans             &trans
+            &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp N5                                        &kp NUMBER_6        &kp N7             &kp N8             &kp N9     &kp N0
+&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                                   &td_left_braceless  &kp RIGHT_BRACKET  &kp MINUS          &kp EQUAL  &kp BACKSLASH  &kp PERIOD
+&kp TILDE   &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans         &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp UNDERSCORE     &kp PLUS   &kp PIPE       &trans
+                                            &trans        &trans                &trans                 &trans  &kp RIGHT_GUI  &kp RIGHT_ALT       &trans             &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
