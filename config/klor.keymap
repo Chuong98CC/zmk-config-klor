@@ -54,14 +54,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MINUS";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp RG(RIGHT_BRACKET)>;
+            bindings = <&kp MINUS>, <&kp RG(MINUS)>;
         };
 
         td_equal: td_equal {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_EQUAL";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp RG(RIGHT_BRACKET)>;
+            bindings = <&kp EQUAL>, <&kp RG(EQUAL)>;
         };
     };
 
