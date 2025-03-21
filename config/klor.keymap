@@ -97,10 +97,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-                          &kp Q  &kp W  &kp E                    &kp R                            &kp T                                                                          &kp Y                     &kp U        &kp I        &kp O    &kp P
-&mt ESCAPE GRAVE          &kp A  &kp S  &kp D                    &hm LEFT_SHIFT F                 &kp G                                                                          &kp H                     &hm RSHFT J  &kp K        &kp L    &hm RIGHT_CONTROL SEMICOLON  &kp APOS
-&mt LEFT_SHIFT BACKSLASH  &kp Z  &kp X  &kp C                    &kp V                            &kp B                           &trans            &trans                       &kp N                     &kp M        &kp COMMA    &kp DOT  &hm RA(RC(RIGHT_GUI)) SLASH  &hm RIGHT_SHIFT ENTER
-                                        &mt LEFT_CONTROL ESCAPE  &mt LEFT_SHIFT RG(LEFT_BRACKET)  &mt LEFT_ALT RG(RIGHT_BRACKET)  &mt LEFT_GUI TAB  &mt RIGHT_CONTROL BACKSPACE  &mt RG(RIGHT_ALT) DELETE  &lt 1 SPACE  &lt 2 SPACE
+                          &kp Q  &kp W  &kp E                              &kp R                 &kp T                                                                          &kp Y                     &kp U        &kp I        &kp O    &kp P
+&mt ESCAPE GRAVE          &kp A  &kp S  &kp D                              &hm LEFT_SHIFT F      &kp G                                                                          &kp H                     &hm RSHFT J  &kp K        &kp L    &hm RIGHT_CONTROL SEMICOLON  &kp APOS
+&mt LEFT_SHIFT BACKSLASH  &kp Z  &kp X  &kp C                              &kp V                 &kp B                           &trans            &trans                       &kp N                     &kp M        &kp COMMA    &kp DOT  &hm RA(RC(RIGHT_GUI)) SLASH  &hm RIGHT_SHIFT ENTER
+                                        &mt LEFT_CONTROL RG(LEFT_BRACKET)  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT RG(RIGHT_BRACKET)  &mt LEFT_GUI TAB  &mt RIGHT_CONTROL BACKSPACE  &mt RG(RIGHT_ALT) DELETE  &lt 1 SPACE  &lt 2 SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -109,10 +109,10 @@
         arrow {
             label = "func";
             bindings = <
-             &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &kp K_MUTE    &kp C_VOLUME_UP  &bt BT_CLR
-&bootloader  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &kp PAGE_UP      &kp LEFT           &kp UP_ARROW  &kp RIGHT        &msc SCRL_UP    &bootloader
-&kp F16      &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &kp PAGE_DOWN    &msc SCRL_LEFT     &kp DOWN      &msc SCRL_RIGHT  &msc SCRL_DOWN  &ext_power EP_TOG
-                               &trans   &trans   &trans   &trans  &trans  &trans           &trans             &trans
+             &kp F1   &kp F2   &kp F3           &kp F4           &kp F5                   &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &kp K_MUTE    &kp C_VOLUME_UP  &bt BT_CLR
+&bootloader  &kp F6   &kp F7   &kp F8           &kp F9           &kp F10                  &kp LEFT         &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT        &kp PAGE_UP    &bootloader
+&kp F16      &kp F11  &kp F12  &kp F13          &kp F14          &kp F15  &trans  &trans  &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT  &kp PAGE_DOWN  &ext_power EP_TOG
+                               &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans   &trans  &trans  &trans           &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
