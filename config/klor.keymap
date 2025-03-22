@@ -120,10 +120,10 @@
 
         NumSym {
             bindings = <
-        &kp N1           &kp N2       &kp N3     &kp N4                &kp N5                                 &kp N6          &kp N7     &kp N8                       &kp N9                         &kp N0
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp MINUS       &kp EQUAL  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SINGLE_QUOTE
-&trans  &kp DOLLAR       &kp PERCENT  &kp CARET  &kp AMPERSAND         &kp ASTRK              &trans  &trans  &kp UNDERSCORE  &kp PLUS   &mt LESS_THAN COMMA          &mt GREATER_THAN PERIOD        &mt QUESTION SLASH   &trans
-                                      &trans     &trans                &trans                 &trans  &trans  &trans          &trans     &trans
+           &kp N1           &kp N2       &kp N3     &kp N4                &kp N5                                 &kp N6          &kp N7     &kp N8                       &kp N9                         &kp N0
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp MINUS       &kp EQUAL  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp COLON     &kp DOUBLE_QUOTES
+&kp PIPE   &kp DOLLAR       &kp PERCENT  &kp CARET  &kp AMPERSAND         &kp ASTRK              &trans  &trans  &kp UNDERSCORE  &kp PLUS   &kp LESS_THAN                &kp GREATER_THAN               &kp QUESTION  &trans
+                                         &trans     &trans                &trans                 &trans  &trans  &trans          &trans     &trans
             >;
         };
     };
