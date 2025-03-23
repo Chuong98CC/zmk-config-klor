@@ -109,10 +109,10 @@
         arrow {
             label = "func";
             bindings = <
-             &kp F1   &kp F2   &kp F3           &kp F4           &kp F5                   &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &kp K_MUTE    &kp C_VOLUME_UP  &bt BT_CLR_ALL
-&bootloader  &kp F6   &kp F7   &kp F8           &kp F9           &kp F10                  &kp LEFT         &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT        &kp PAGE_UP     &bootloader
-&kp F16      &kp F11  &kp F12  &kp F13          &kp F14          &kp F15  &trans  &trans  &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT  &kp PAGE_DOWN   &ext_power EP_TOG
-                               &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans   &trans  &trans  &trans           &trans             &trans
+             &kp F1   &kp F2   &kp F3           &kp F4           &kp F5                   &rgb_ug RGB_ON  &kp C_VOLUME_DOWN  &kp K_MUTE    &kp C_VOLUME_UP  &bt BT_CLR_ALL
+&bootloader  &kp F6   &kp F7   &kp F8           &kp F9           &kp F10                  &kp LEFT        &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT        &kp PAGE_UP     &bootloader
+&kp F16      &kp F11  &kp F12  &kp F13          &kp F14          &kp F15  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT  &kp PAGE_DOWN   &ext_power EP_ON
+                               &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans   &trans  &trans  &trans          &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
