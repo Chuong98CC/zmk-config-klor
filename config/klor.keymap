@@ -111,10 +111,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-                          &kp Q  &kp W  &kp E          &kp R                 &kp T                                                               &kp Y                    &kp U        &kp I        &kp O    &kp P
-&mt ESCAPE GRAVE          &kp A  &kp S  &kp D          &hm LEFT_SHIFT F      &kp G                                                               &kp H                    &hm RSHFT J  &kp K        &kp L    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&mt LEFT_SHIFT BACKSLASH  &kp Z  &kp X  &kp C          &kp V                 &kp B                &trans            &trans                       &kp N                    &kp M        &kp COMMA    &kp DOT  &kp SLASH         &mt RIGHT_SHIFT SEMICOLON
-                                        &lt 1 LG(TAB)  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT DELETE  &mt LEFT_GUI TAB  &mt RIGHT_CONTROL BACKSPACE  &mt RG(RIGHT_ALT) ENTER  &lt 2 SPACE  &lt 1 SPACE
+                          &kp Q  &kp W  &kp E         &kp R                 &kp T                                                                &kp Y                     &kp U        &kp I      &kp O    &kp P
+&mt ESCAPE GRAVE          &kp A  &kp S  &kp D         &hm LEFT_SHIFT F      &kp G                                                                &kp H                     &hm RSHFT J  &kp K      &kp L    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&mt LEFT_SHIFT BACKSLASH  &kp Z  &kp X  &kp C         &kp V                 &kp B                 &trans            &trans                       &kp N                     &kp M        &kp COMMA  &kp DOT  &kp SLASH         &mt RIGHT_SHIFT SEMICOLON
+                                        &lt 2 ESCAPE  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT LG(TAB)  &mt LEFT_GUI TAB  &mt RIGHT_CONTROL BACKSPACE  &mt RG(RIGHT_ALT) DELETE  &lt 1 SPACE  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -132,10 +132,10 @@
         function {
             label = "func";
             bindings = <
-             &kp F1   &kp F2   &kp F3           &kp F4           &kp F5                   &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &kp K_MUTE    &kp C_VOLUME_UP  &bt BT_CLR_ALL
-&bootloader  &kp F6   &kp F7   &kp F8           &kp F9           &kp F10                  &kp LEFT_ARROW   &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT        &kp PAGE_UP     &bootloader
-&kp F16      &kp F11  &kp F12  &kp F13          &kp F14          &kp F15  &trans  &trans  &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT  &kp PAGE_DOWN   &ext_power EP_TOG
-                               &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans   &trans  &trans  &trans           &trans             &trans
+             &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                          &rgb_ug RGB_TOG  &kp C_VOLUME_DOWN  &kp K_MUTE         &kp C_VOLUME_UP  &bt BT_CLR_ALL
+&bootloader  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                         &kp LEFT_ARROW   &kp DOWN_ARROW     &kp UP_ARROW       &kp RIGHT        &kp PAGE_UP     &bootloader
+&kp F16      &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans         &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_UP       &msc SCRL_RIGHT  &kp PAGE_DOWN   &ext_power EP_TOG
+                               &trans   &trans   &trans   &trans  &kp RIGHT_GUI  &kp RIGHT_ALT    &kp RIGHT_SHIFT    &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
