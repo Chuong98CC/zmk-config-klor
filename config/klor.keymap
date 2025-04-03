@@ -143,10 +143,10 @@
 
         arrow_key {
             bindings = <
-        &kp LG(NUMBER_1)  &kp RG(NUMBER_2)  &kp RG(NUMBER_3)  &kp RG(NUMBER_4)  &kp RG(N5)                                     &trans                &trans                 &trans         &trans    &trans
-&trans  &kp RG(NUMBER_6)  &kp RG(N7)        &kp RG(N8)        &kp RG(N9)        &kp RG(N0)                                     &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &trans         &kp UP    &kp RIGHT  &trans
-&trans  &trans            &trans            &trans            &trans            &trans      &trans          &trans             &kp RG(MINUS)         &kp RG(EQUAL)          &kp LEFT       &kp DOWN  &trans     &trans
-                                            &trans            &trans            &trans      &kp LG(DELETE)  &kp RG(BACKSPACE)  &kp RG(DELETE)        &kp RC(MINUS)          &kp RC(EQUAL)
+        &kp LG(NUMBER_1)  &kp RG(NUMBER_2)  &kp RG(NUMBER_3)  &kp RG(NUMBER_4)  &kp RG(N5)                                     &trans          &trans                &trans                 &trans    &trans
+&trans  &kp RG(NUMBER_6)  &kp RG(N7)        &kp RG(N8)        &kp RG(N9)        &kp RG(N0)                                     &kp RG(MINUS)   &kp RG(PLUS)          &trans                 &kp UP    &kp RIGHT  &trans
+&trans  &trans            &trans            &trans            &trans            &trans      &trans          &trans             &kp RC(MINUS)   &kp RC(EQUAL)         &kp LEFT               &kp DOWN  &trans     &trans
+                                            &trans            &trans            &trans      &kp LG(DELETE)  &kp RG(BACKSPACE)  &kp RG(DELETE)  &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)
             >;
         };
     };
