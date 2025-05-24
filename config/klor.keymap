@@ -166,7 +166,7 @@
 
             bindings = <
                  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &trans  &trans  &kp LBRC                         &kp RBRC  &kp LEFT  &kp UP      &kp RIGHT  &kp HOME
-&rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans           &trans  &kp A   &kp LBKT                         &kp RBKT  &trans    &kp DOWN    &trans     &kp PSCRN  &kp PG_UP
+&rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans  &kp A   &kp LBKT                         &kp RBKT  &trans    &kp DOWN    &trans     &kp PSCRN  &kp PG_UP
 &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &trans  &trans  &kp LPAR  &kp C_MUTE  &kp K_PP   &kp RPAR  &trans    &trans      &trans     &kp END    &kp PG_DN
                                                    &trans  &trans  &trans    &mo LSHFT   &mo RSHFT  &trans    &trans    &mo ADJUST
             >;
