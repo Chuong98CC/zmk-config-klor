@@ -23,9 +23,7 @@
 // &led_strip { chain-length = <21>; };
 
 #define BASE   0
-#define LOWER  1
-#define RAISE  2
-#define ADJUST 3
+
 
 / {
     behaviors {
@@ -37,58 +35,6 @@
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        };
-
-        td_left_braceless: td_left_braceless {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LEFT_BRACELESS";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET>, <&kp RG(LEFT_BRACKET)>;
-        };
-
-        td_right_bracceless: td_right_bracceless {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_RIGHT_BRACCELESS";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET>, <&kp RG(RIGHT_BRACKET)>;
-        };
-
-        td_minus: td_minus {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_MINUS";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
-        };
-
-        td_equal: td_equal {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_EQUAL";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp PLUS>;
-        };
-
-        td_semi_colon: td_semi_colon {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SEMI_COLON";
-            #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp SEMI>;
-        };
-
-        td_quote: td_quote {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_QUOTE";
-            #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp DOUBLE_QUOTES>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp ESC>;
         };
     };
 
