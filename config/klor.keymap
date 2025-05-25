@@ -221,10 +221,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &bt BT_CLR  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &bt BT_CLR
-&trans  &bt BT_NXT  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &bt BT_NXT  &trans
-&trans  &bt BT_PRV  &trans  &trans  &trans  &trans  &kp C_MUTE  &kp K_PP  &trans  &trans  &trans  &trans  &bt BT_PRV  &trans
-                            &trans  &trans  &trans  &trans      &trans    &trans  &trans  &trans
+             &bt BT_CLR  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &bt BT_CLR
+&bootloader  &bt BT_NXT  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &bt BT_NXT  &bootloader
+&trans       &bt BT_PRV  &trans  &trans  &trans  &trans  &kp C_MUTE  &kp K_PP  &trans  &trans  &trans  &trans  &bt BT_PRV  &trans
+                                 &trans  &trans  &trans  &trans      &trans    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
